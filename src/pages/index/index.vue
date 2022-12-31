@@ -2,7 +2,7 @@
   <view class="home-page">
     <view v-for="site in curList" :key="site.name" class="site">
         <nut-button class="btn"
-                    type="primary"
+                    :type="btnTypeArr[curIndex]"
                     @click="openSite(site)">
           {{ site.name }}
         </nut-button>
@@ -23,6 +23,7 @@ import { sites, teams, developers, projects, weekly } from './sites'
 import { ref, computed } from 'vue';
 
 const arr = ref([sites, teams, developers, projects, weekly]);
+const btnTypeArr = ref(['primary', 'info', 'warning', 'success', 'primary']);
 const curIndex = ref(0);
 const curList = computed(() => {
    return arr.value[curIndex.value]
