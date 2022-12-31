@@ -51,10 +51,10 @@ export const weekly = [
   },
   {
     name: 'node weekly',
-    link: '',
+    link: 'https://nodeweekly.com/',
   },
   {
     name: 'javascript weekly',
-    link: '',
+    link: 'https://javascriptweekly.com/',
   },
 ]
