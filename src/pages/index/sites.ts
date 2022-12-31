@@ -47,7 +47,7 @@ export const weekly = [
   },
   {
     name: 'fe weekly',
-    link: '',
+    link: 'https://frontender-ua.medium.com/frontend-weekly-digest-290-19-25-december-2022-3daf98f785b4',
   },
   {
     name: 'node weekly',
